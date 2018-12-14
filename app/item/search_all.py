@@ -104,9 +104,9 @@ def video(word):
 
 def dictionary(word):
     url = {
-        '네이버': 'https://terms.naver.com/search.nhn?query=',
-        '다음': 'http://100.daum.net/search/entry?q=',
-        '위키피디아': 'https://ko.wikipedia.org/wiki/'
+        '네이버': 'https://terms.naver.com/search.nhn?query={0}',
+        '다음': 'http://100.daum.net/search/entry?q={0}',
+        '위키피디아': 'https://ko.wikipedia.org/wiki/{0}'
     }
     engine_list = list(url.keys())
     url_list = [url[i].format(quote(word)) for i in engine_list]
