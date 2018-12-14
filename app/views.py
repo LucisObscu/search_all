@@ -73,6 +73,8 @@ def translate(request):
                 'df2':'영어',
                 'data':true_list,
                 'ke':ke,
+                'srch':srch,
+                'method': request.method,
             }
         )
     else:
@@ -83,6 +85,7 @@ def translate(request):
                 'df': '한국어',
                 'df2': '영어',
                 'ke': ke,
+                'method': request.method,
             }
         )
 
