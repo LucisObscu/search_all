@@ -48,7 +48,7 @@ def kakao_translate(srch,before,after):
         params = {'query': srch,
                   'src_lang': k[before],
                   'target_lang': k[after]}
-        headers = {'Authorization': 'KakaoAK 67841a128d0a67d67d210aa021a54645'}
+        headers = {'Authorization': 'KakaoAK b167b8ee6ae11b188ec88be00166bcd3'}
         res = requests.get('https://kapi.kakao.com/v1/translation/translate', params=params, headers=headers)
         parse = res.json()
         return parse['translated_text'][0][0]
